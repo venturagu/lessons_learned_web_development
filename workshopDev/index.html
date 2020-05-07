@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Casa Criativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <section id="intro">
+
+            <header>
+                <img src="assets/logo.png" alt="Imagem da logomarca" id="logo">
+            </header>
+
+            <main>
+                <p>
+                    Ficar em casa em periodos longos, não deve ser nada fácil.
+                    <p>
+
+                        <p>
+                            Por isso, iremos catalogar ideias, brincadeiras, jogos, filmes, livros,
+                            cursos, dicas e tudo que for necessário para tornar esse momento mais interessante.
+                        </p>
+
+                        <p>
+                            Comece clicando em ideias para ver as
+                            ideias cadastradas e contríbua adicionando suas ideias.
+                        </p>
+
+            </main>
+
+            <section id="buttons">
+                <button onclick="onOff()">+ Adicionar ideia</button>
+                <button class="fat">Ver Ideias</button>
+            </section>
+
+            <footer>
+                <p id="footer">WorshopDev
+                    <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg">
+                        TREINAMENTOS</a>
+                </p>
+            </footer>
+
+        </section>
+
+        <section id="last-ideias">
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de Programação">
+
+                <div class="content">
+                    <h3>Curso de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
+                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
+                        voluptates dolor quos, ut repudiandae illum.
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercícios">
+
+                <div class="content">
+                    <h3>Exercícios</h3>
+                    <p>Saúde</p>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
+                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
+                        voluptates dolor quos, ut repudiandae illum.
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação">
+
+                <div class="content">
+                    <h3>Meditação</h3>
+                    <p>Meditação</p>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
+                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
+                        voluptates dolor quos, ut repudiandae illum.
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+        
+        <div class="content">
+            <h1>Nova ideia</h1>
+
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Título da Ideia</label>
+                    <input type="text" name="title">
+
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Link da Imagem</label>
+                    <input type="text" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Digite uma descrição para essa idea</label>
+                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Link da Ideia</label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>Salvar</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="JavaScript/index.js"></script>
+
+</html>
