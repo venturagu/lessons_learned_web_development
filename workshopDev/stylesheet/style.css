@@ -10,6 +10,10 @@ body{
     margin: 0;
 }
 
+body.hideScroll {
+    overflow: hidden;
+}
+
 #container {
     width: 80%;
     max-width: 980px;
@@ -22,7 +26,7 @@ body{
 #intro {
     width: 300px;
 
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 main {
@@ -54,28 +58,6 @@ button{
 
     cursor: pointer;
     outline: none;
-}
-
-botton:hover {
-    color: rgb(189, 60, 56);
-    transition: 400ms;
-}
-
-button.fat:hover {
-    text-decoration: none;
-    box-shadow: 0px 8px 16px rgba(201, 4, 76, 0.2);
-}
-
-button.fat{
-    color: white;
-    background-color: rgb(255, 99, 94);
-
-    width: 150px;
-    height: 40px;
-
-    border-radius: 6px;
-    
-
 }
 
 footer{
@@ -110,6 +92,38 @@ a:hover{
     transition: 400ms;
 }
 
+botton:hover {
+    color: rgb(189, 60, 56);
+    transition: 400ms;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: #0984e3;
+    color: white;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+.button{
+    color: white;
+    background-color: rgb(255, 99, 94);
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .idea {
     display: flex;
 
@@ -140,24 +154,28 @@ a:hover{
 
 .idea .description {
     margin: 16px 0;
-
 }
 
 #modal {
     background: #ff5E84;
 
     position: absolute;
+
     top: 0;
-
-    width: 100vw;
-    height: 100vw;
-
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
     display: flex;
     justify-content: center;
 }
 
+#modal.addScroll{
+    overflow: auto;
+}
+
 #modal .content {
-    margin-top: 128px;
+    margin-top: 15%;
     color: white;
 }
 
@@ -171,7 +189,8 @@ a:hover{
     width: 80%;
     max-width: 800px;
 
-    margin: 0 auto;
+    margin: 0 auto 15%;
+    
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,6 +203,7 @@ a:hover{
 .content form div:nth-child(5) {
     grid-column: span 2;
 }
+
 
 form input,
 form textarea {
@@ -260,4 +280,72 @@ form button:hover {
     opacity: 0;
     visibility: hidden;
     transition: 0.15s;
+}
+
+/* IDEIA.HTML */
+
+#page-ideas #container{
+    display: block;
+}
+
+#page-ideas header{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#page-ideas nav {
+    display: flex;
+    align-items: center;
+}
+
+#page-ideas nav li {
+    list-style-type: none;
+
+    margin-right: 16px;
+}
+
+#page-ideas nav li:last-child{
+    margin: 0;
+}
+
+#page-ideas nav li a{
+    color: #25282B
+}
+
+#page-ideas nav li a.button{
+    color: white
+}
+
+section#title{
+    text-align: center;
+
+}
+
+section#title p{
+    opacity: 0.7;
+}
+
+section#title h1{
+    margin: 0;
+
+    font-size: 28px;
+}
+
+section#ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+section#ideas .idea {
+    margin: 0;
+}
+
+
+section#titulo,
+section#ideas,
+footer{
+    margin-top: 64px;
 }
