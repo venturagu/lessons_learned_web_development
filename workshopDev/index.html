@@ -15,7 +15,7 @@
         <section id="intro">
 
             <header>
-                <a href="index.html">
+                <a href="/">
                     <img src="../assets/logo.png" alt="Imagem da logomarca" id="logo">
                 </a>
             </header>
@@ -39,7 +39,7 @@
 
             <section id="buttons">
                 <button onclick="onOff()">+ Adicionar ideia</button>
-                <a href="ideias.html" class="button">Ver Ideias</a>
+                <a href="/ideias" class="button">Ver Ideias</a>
             </section>
 
             <footer>
@@ -52,52 +52,25 @@
         </section>
 
         <section id="ideias">
-            <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de Programação">
 
-                <div class="content">
-                    <h3>Curso de Programação</h3>
-                    <p>Estudo</p>
-                    <div class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
-                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
-                        voluptates dolor quos, ut repudiandae illum.
+            {% for idea in ideas %}
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de Programação">
+
+                    <div class="content">
+                        <h3>Curso de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
+                            blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
+                            voluptates dolor quos, ut repudiandae illum.
+                        </div>
+                        <a href="#">Ir para a Ideia</a>
                     </div>
-                    <a href="#">Ir para a Ideia</a>
                 </div>
-            </div>
+            {% endfor %}
 
-            <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercícios">
-
-                <div class="content">
-                    <h3>Exercícios</h3>
-                    <p>Saúde</p>
-                    <div class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
-                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
-                        voluptates dolor quos, ut repudiandae illum.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
-
-            <div class="idea">
-                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação">
-
-                <div class="content">
-                    <h3>Meditação</h3>
-                    <p>Meditação</p>
-                    <div class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas iste laudantium sunt tempora
-                        blanditiis cum soluta suscipit. Deleniti natus iusto beatae, doloremque perferendis error
-                        voluptates dolor quos, ut repudiandae illum.
-                    </div>
-                    <a href="#">Ir para a Ideia</a>
-                </div>
-            </div>
-
-        </section>
+            </section>
 
     </div>
 

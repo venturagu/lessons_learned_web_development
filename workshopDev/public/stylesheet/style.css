@@ -159,7 +159,7 @@ botton:hover {
 #modal {
     background: #ff5E84;
 
-    position: absolute;
+    position: fixed;
 
     top: 0;
     bottom: 0;
@@ -175,7 +175,7 @@ botton:hover {
 }
 
 #modal .content {
-    margin-top: 15%;
+    margin-top: 5%;
     color: white;
 }
 
